@@ -2,6 +2,7 @@
 
 use App\Category;
 use App\Course;
+use App\User;
 use Cocur\Slugify\Slugify;
 use Illuminate\Database\Seeder;
 
@@ -23,6 +24,7 @@ class CoursesSeeder extends Seeder
         $course->description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ultrices erat, sit amet rutrum nisi. Integer sollicitudin ullamcorper mauris, eget tempus libero dignissim eu. Vestibulum nunc nulla, suscipit nec augue sed, posuere dignissim nisl. Quisque dignissim in massa ac pulvinar. Sed bibendum sem ut condimentum vulputate. Ut vehicula, urna vitae fringilla commodo, leo lectus ultrices odio, id vestibulum nibh neque eu massa. Nam nulla risus, ultricies vitae lorem sit amet, vestibulum auctor nibh. Integer congue rhoncus leo. Cras dictum malesuada blandit.";
         $course->price = 19.99;
         $course->category_id = Category::all()->random(1)->first()->id;
+        $course->user_id = User::all()->random(1)->first()->id;
         $course->save();
 
         $course = new Course();
@@ -32,6 +34,7 @@ class CoursesSeeder extends Seeder
         $course->description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ultrices erat, sit amet rutrum nisi. Integer sollicitudin ullamcorper mauris, eget tempus libero dignissim eu. Vestibulum nunc nulla, suscipit nec augue sed, posuere dignissim nisl. Quisque dignissim in massa ac pulvinar. Sed bibendum sem ut condimentum vulputate. Ut vehicula, urna vitae fringilla commodo, leo lectus ultrices odio, id vestibulum nibh neque eu massa. Nam nulla risus, ultricies vitae lorem sit amet, vestibulum auctor nibh. Integer congue rhoncus leo. Cras dictum malesuada blandit.";
         $course->price = 16.99;
         $course->category_id = Category::all()->random(1)->first()->id;
+        $course->user_id = User::all()->random(1)->first()->id;
         $course->save();
 
         $course = new Course();
@@ -41,6 +44,7 @@ class CoursesSeeder extends Seeder
         $course->description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ultrices erat, sit amet rutrum nisi. Integer sollicitudin ullamcorper mauris, eget tempus libero dignissim eu. Vestibulum nunc nulla, suscipit nec augue sed, posuere dignissim nisl. Quisque dignissim in massa ac pulvinar. Sed bibendum sem ut condimentum vulputate. Ut vehicula, urna vitae fringilla commodo, leo lectus ultrices odio, id vestibulum nibh neque eu massa. Nam nulla risus, ultricies vitae lorem sit amet, vestibulum auctor nibh. Integer congue rhoncus leo. Cras dictum malesuada blandit.";
         $course->price = 14.99;
         $course->category_id = Category::all()->random(1)->first()->id;
+        $course->user_id = User::all()->random(1)->first()->id;
         $course->save();
 
         $course = new Course();
@@ -50,6 +54,7 @@ class CoursesSeeder extends Seeder
         $course->description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ultrices erat, sit amet rutrum nisi. Integer sollicitudin ullamcorper mauris, eget tempus libero dignissim eu. Vestibulum nunc nulla, suscipit nec augue sed, posuere dignissim nisl. Quisque dignissim in massa ac pulvinar. Sed bibendum sem ut condimentum vulputate. Ut vehicula, urna vitae fringilla commodo, leo lectus ultrices odio, id vestibulum nibh neque eu massa. Nam nulla risus, ultricies vitae lorem sit amet, vestibulum auctor nibh. Integer congue rhoncus leo. Cras dictum malesuada blandit.";
         $course->price = 19.99;
         $course->category_id = Category::all()->random(1)->first()->id;
+        $course->user_id = User::all()->random(1)->first()->id;
         $course->save();
 
     }
